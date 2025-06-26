@@ -1,0 +1,78 @@
+/* Tally Tab Component Styles */
+
+/* Prevent body scroll when form is open */
+body.tally-form-open {
+	overflow: hidden;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+	.tally-tab {
+		width: 50px !important;
+		height: 50px !important;
+		font-size: var(--font-size-small) !important;
+	}
+	
+	.tally-form-container {
+		width: 90vw !important;
+		height: 80vh !important;
+		right: 50px !important;
+		left: 50px !important;
+	}
+	
+	.tally-form-content {
+		-webkit-overflow-scrolling: touch !important;
+		scrollbar-width: thin;
+	}
+}
+
+/* Animation for tab hover effect */
+.tally-tab:hover {
+	transform: translateY(-50%) scale(1.05) !important;
+	box-shadow: -3px 3px 15px rgba(0,0,0,0.3) !important;
+}
+
+/* Focus styles for accessibility */
+.tally-tab:focus,
+.tally-close-btn:focus {
+	outline: 2px solid var(--color-accent);
+	outline-offset: 2px;
+}
+
+/* Close button hover effect */
+.tally-close-btn:hover {
+	background-color: var(--background-color-shade-1);
+}
+
+/* Loading animation */
+.tally-loading {
+	animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+	0%, 100% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.5;
+	}
+}
+
+/* Scrollbar styling for better UX */
+.tally-form-content::-webkit-scrollbar {
+	width: 6px;
+}
+
+.tally-form-content::-webkit-scrollbar-track {
+	background: var(--background-color-shade-1);
+	border-radius: 3px;
+}
+
+.tally-form-content::-webkit-scrollbar-thumb {
+	background: var(--border-color);
+	border-radius: 3px;
+}
+
+.tally-form-content::-webkit-scrollbar-thumb:hover {
+	background: var(--border-color-strong);
+} 
