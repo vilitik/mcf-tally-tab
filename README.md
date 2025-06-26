@@ -10,6 +10,7 @@ A MyCashflow plugin that adds a "Hotjar" style tab to left or right side of the 
 - Responsive design with mobile support
 - Keyboard accessibility (ESC to close)
 - Configurable appearance and behavior
+- TODO: Support Tally dynamic height
 
 ## Installation
 
