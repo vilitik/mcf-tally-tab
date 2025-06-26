@@ -129,9 +129,10 @@ It becomes:
 https://tally.so/embed/abc123?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1
 ```
 
-## Browser Support
+## Requirements
 
-- Requires jQuery (included in default MyCashflow themes)
+- Theme based on the new MCF default theme ("Fluid")
+- jQuery (included in default MyCashflow themes)
 
 ## License
 
